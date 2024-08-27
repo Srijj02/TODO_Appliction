@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOLIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODOLIST</h1>
+        <div id="addArea">
+            <h3>Add tasks</h3>
+            <div id="myOverlay" class="overlay">
+                <form id="form">
+                    
+                    <i id="close"><span onclick="closePopUp()"><i class="fa-solid fa-xmark"></i></span></i>
+                    <h2>Add Task</h2>
+                    <div id="formContent">
+                        <label for="addText">Add Task</label>
+                        <input type="text" name="Add" id="addText" placeholder="Add Task">
+                        <br>
+                        <label for="datetime">Date</label>
+                        <input type="date" id="date">
+                        <br>
+                        <label for="discrption">Discrption</label>
+                        <textarea name="taskDiscrption" id="discrption"></textarea>
+                        <br>
+                        <span id="errorMsg"></span>
+                        <button id="addBtn" type="submit">ADD</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <span><i id="add" onclick="openPopUp()" class="fa-regular fa-plus"></i></span>
+        </div>
+
+        <h3>Tasks</h3>
+        <div id="tasks">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
